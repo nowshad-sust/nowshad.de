@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { lazy, Suspense } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
@@ -12,8 +10,8 @@ import {
 import particlesConf from "./particlesConf";
 import ProfileLow from "./static/img/profile-low.JPG";
 
-const Particles = lazy(() => import("react-particles-js"));
 const ProfileImg = lazy(() => import("./components/ProfileImg"));
+const Particles = lazy(() => import("react-tsparticles"));
 
 const resume = process.env.PUBLIC_URL + "/nowshad-resume.pdf";
 
@@ -62,7 +60,7 @@ export default function App() {
 				</div>
 			</div>
 			<Suspense fallback="Loading...">
-				<Particles id="background" params={particlesConf} />
+				<Particles id="background" options={particlesConf} />
 			</Suspense>
 		</div>
 	);
