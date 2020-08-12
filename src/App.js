@@ -7,10 +7,12 @@ import {
 	faGithubSquare,
 	faYoutubeSquare,
 } from "@fortawesome/free-brands-svg-icons";
-import particlesConf from "./particlesConf";
-import ProfileLow from "./static/img/profile-low.JPG";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const ProfileImg = lazy(() => import("./components/ProfileImg"));
+import particlesConf from "./particlesConf";
+import ProfileImgLow from "./static/img/profile-low.JPG";
+import ProfileImgHQ from "./static/img/profile-hq.JPG";
+
 const Particles = lazy(() => import("react-tsparticles"));
 
 const resume = process.env.PUBLIC_URL + "/nowshad-resume.pdf";
@@ -19,9 +21,12 @@ export default function App() {
 	return (
 		<div className="App">
 			<div className="main" id="main">
-				<Suspense fallback={<img src={ProfileLow} alt="profile" />}>
-					<ProfileImg />
-				</Suspense>
+				<LazyLoadImage
+					className="image-container"
+					alt="profile img"
+					src={ProfileImgHQ}
+					placeholderSrc={ProfileImgLow} // use normal <img> attributes as props
+				/>
 				<h2>MD. AL-AMIN NOWSHAD</h2>
 				<h4>FULL STACK JAVASCRIPT DEVELOPER</h4>
 				<h5>COLOGNE, GERMANY</h5>

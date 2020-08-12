@@ -46,6 +46,12 @@ body {
 	padding: 20px 10px;
 	border: 8px solid #34495d;
 	background-color: #fafbfd;
+
+	.lazy-load-image-background {
+		width: 250px;
+		min-width: 250px;
+	}
+
 	img {
 		border: 3px solid #34495d;
 		border-radius: 50%;
