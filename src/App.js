@@ -29,7 +29,7 @@ export default function App() {
 				/>
 				<h2>MD. AL-AMIN NOWSHAD</h2>
 				<h4>FULL STACK JAVASCRIPT DEVELOPER</h4>
-				<h5>COLOGNE, GERMANY</h5>
+				<h5>BERLIN, GERMANY</h5>
 				<div className="social">
 					<a
 						target="_blank"
