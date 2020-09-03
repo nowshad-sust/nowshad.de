@@ -28,7 +28,7 @@ export default function App() {
 					placeholderSrc={ProfileImgLow} // use normal <img> attributes as props
 				/>
 				<h2>MD. AL-AMIN NOWSHAD</h2>
-				<h4>FULL STACK JAVASCRIPT DEVELOPER</h4>
+				<h4>SOFTWARE ENGINEER (FRONTEND FOCUS)</h4>
 				<h5>BERLIN, GERMANY</h5>
 				<div className="social">
 					<a
