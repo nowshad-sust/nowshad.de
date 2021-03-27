@@ -7,22 +7,12 @@ import {
   faGithub,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-
-import ProfileImgLow from "./static/img/profile-low.JPG";
-import ProfileImgHQ from "./static/img/profile-hq.JPG";
 
 const resume = process.env.PUBLIC_URL + "/nowshad-resume.pdf";
 
 const Profession = () => {
   return (
     <div className="profession">
-      <LazyLoadImage
-        className="image-container"
-        alt="profile img"
-        src={ProfileImgHQ}
-        placeholderSrc={ProfileImgLow} // use normal <img> attributes as props
-      />
       <h2>MD. AL-AMIN NOWSHAD</h2>
       <h4>SOFTWARE ENGINEER (FRONTEND FOCUS)</h4>
       <h5>BERLIN, GERMANY</h5>
