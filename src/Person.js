@@ -30,7 +30,7 @@ const Person = () => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.youtube.com/channel/UCsO3ox8-C-wkl61zaIEWMfw"
+          href="https://www.youtube.com/channel/UCkx6WRjN0oOEjZSyDZitByA"
         >
           <FontAwesomeIcon icon={faYoutube} color="white" />
         </a>
