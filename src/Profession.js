@@ -8,8 +8,6 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
-const resume = process.env.PUBLIC_URL + "/nowshad-resume.pdf";
-
 const Profession = () => {
   return (
     <div className="profession">
@@ -44,9 +42,6 @@ const Profession = () => {
           href="https://github.com/nowshad-sust"
         >
           <FontAwesomeIcon icon={faGithub} />
-        </a>
-        <a target="_blank" rel="noopener noreferrer" href={resume}>
-          <FontAwesomeIcon icon={faAddressCard} />
         </a>
       </div>
     </div>
